@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/league.min.css">
+    <style>
+        :root {
+            --light-blue: #B8E4FF;
+            --dark-bg: #0A051D;
+            --purple-1: #6B57FF;
+            --purple-2: #553EE0;
+            --purple-3: #4026C1;
+        }
+        
+        .reveal-viewport {
+            background: var(--dark-bg);
+        }
+        
+        .reveal .slides {
+            text-align: left;
+        }
+        
+        .reveal h1, .reveal h2 {
+            color: var(--purple-1);
+        }
+
+        .reveal h3 {
+            color: var(--light-blue);
+        }
+        
+        .reveal ul {
+            margin-left: 1em;
+        }
+        
+        .reveal .progress {
+            color: var(--purple-2);
+        }
+        
+        .highlight {
+            color: var(--light-blue);
+            font-weight: bold;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: rgba(107, 87, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid var(--purple-1);
+            flex: 1;
+            margin: 0 10px;
+        }
+        
+        .quote-box {
+            background: rgba(184, 228, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border-left: 3px solid var(--purple-2);
+        }
+        
+        .image-placeholder {
+            width: 800px;
+            height: 500px;
+            background: rgba(184, 228, 255, 0.05);
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed var(--purple-1);
+            color: var(--light-blue);
+        }
+        
+        .quote-section {
+            display: grid;
+            gap: 20px;
+        }
+        
+        .quote-category {
+            margin-top: 20px;
+            color: var(--light-blue);
+        }
+
+        .key-metric {
+            background: rgba(107, 87, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 3px solid var(--purple-1);
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section>
+                <h1>AI Knowledge & Training Analysis</h1>
+                <h3>Executive Summary</h3>
+                <p>Based on 306 responses (19% of workforce)</p>
+                <div class="key-metric">
+                    <p>Survey Coverage: 19% of Ansira's workforce</p>
+                    <p>Total Responses: 306</p>
+                </div>
+            </section>
+
+            <!-- Executive Summary -->
+            <section>
+                <h2>Key Findings</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>60%</h3>
+                        <p>ChatGPT Usage</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>55%</h3>
+                        <p>Prefer Hands-on Workshops</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>71%</h3>
+                        <p>Course Completion Rate</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enrollment Status -->
+            <section>
+                <h2>Course Enrollment Status</h2>
+                <div class="key-metric">
+                    <p>Total Enrolled: 336 employees</p>
+                    <p>Completed: 240 employees (71%)</p>
+                    <p>In Progress: 96 employees</p>
+                </div>
+            </section>
+
+            <!-- Completion Rate -->
+            <section>
+                <h2>Course Completion Rate</h2>
+                <div class="key-metric">
+                    <p>Enrollment Rate: 21% of employees</p>
+                    <p>Completion Among Enrolled: 71.6%</p>
+                </div>
+            </section>
+
+            <!-- Knowledge Distribution -->
+            <section>
+                <h2>Knowledge Distribution</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>30%</h3>
+                        <p>Beginner (92)</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>40%</h3>
+                        <p>Intermediate (122)</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>25%</h3>
+                        <p>Advanced (76)</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>5%</h3>
+                        <p>Expert (16)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Domain Knowledge -->
+            <section>
+                <h2>Domain-Specific Knowledge</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>60%</h3>
+                        <p>Large Language Models</p>
+                        <small>25% at advanced/expert level</small>
+                    </div>
+                    <div class="stat-box">
+                        <h3>40%</h3>
+                        <p>Natural Language Processing</p>
+                        <small>15% at advanced/expert</small>
+                    </div>
+                    <div class="stat-box">
+                        <h3>35%</h3>
+                        <p>Computer Vision</p>
+                        <small>10% at advanced/expert</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tool Usage -->
+            <section>
+                <h2>Current Tool Usage</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>60%</h3>
+                        <p>ChatGPT</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>25%</h3>
+                        <p>Microsoft Copilot</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>20%</h3>
+                        <p>Adobe AI Tools</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>15%</h3>
+                        <p>Gemini</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Employee Voice - Productivity -->
+            <section>
+                <h2>Employee Voice</h2>
+                <h3 class="quote-category">Productivity Gains</h3>
+                <div class="quote-box">
+                    "Using ChatGPT, what would have taken me hours of research and writing got done in under an hour."
+                </div>
+                <div class="quote-box">
+                    "Co-pilot for helping to write Excel and DAX formulas... huge time-saver."
+                </div>
+                <div class="quote-box">
+                    "If AI could summarize my email workload, that'd save at least 3 hours per week."
+                </div>
+            </section>
+
+            <!-- Employee Voice - Experience Levels -->
+            <section>
+                <h2>Training Needs by Level</h2>
+                <h3 class="quote-category">Beginner Level</h3>
+                <div class="quote-box">
+                    "I want more hands-on practice and understand how it applies to my job."
+                </div>
+                <div class="quote-box">
+                    "We learned about AI tools, but I need real examples that fit into my daily tasks."
+                </div>
+            </section>
+
+            <!-- Employee Voice - Advanced -->
+            <section>
+                <h2>Advanced User Insights</h2>
+                <div class="quote-box">
+                    "You must write a long, thorough prompt to see value out of AI to draft content."
+                </div>
+                <div class="quote-box">
+                    "We miss having some sharing of knowledge between coworkers. Maybe we need to have internal best-practices sessions."
+                </div>
+            </section>
+
+            <!-- Training Preferences -->
+            <section>
+                <h2>Training Preferences</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>55%</h3>
+                        <p>Hands-on Workshops</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>50%</h3>
+                        <p>Self-Paced Courses</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>50%</h3>
+                        <p>Tool-Specific Training</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>45%</h3>
+                        <p>Basic AI Training</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation Challenges -->
+            <section>
+                <h2>Implementation Challenges</h2>
+                <div class="quote-box">
+                    "I ended up redoing [the output] manually when the data wasn't lining up correctly."
+                </div>
+                <div class="quote-box">
+                    "AI can produce and promulgate errors and deep fakes at an alarming rate. It should be thoughtfully and selectively used."
+                </div>
+                <div class="quote-box">
+                    "At this point in the technology's development I wouldn't trust AI to 'understand' the complexities and nuances omnipresent in my work."
+                </div>
+            </section>
+
+            <!-- Recommendations -->
+            <section>
+                <h2>Recommendations</h2>
+                <div class="key-metric">
+                    <h3>Establish Clear Governance</h3>
+                    <ul>
+                        <li>Define acceptable use policies</li>
+                        <li>Create data handling guidelines</li>
+                        <li>Establish validation frameworks</li>
+                    </ul>
+                </div>
+                <div class="key-metric">
+                    <h3>Invest in Training</h3>
+                    <ul>
+                        <li>Deploy tiered training programs</li>
+                        <li>Support mentorship initiatives</li>
+                        <li>Create role-specific resources</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Expected Outcomes -->
+            <section>
+                <h2>Expected Outcomes</h2>
+                <div class="key-metric">
+                    <h3>Productivity Gains</h3>
+                    <p>Estimated 2-5 hours saved per person/week</p>
+                </div>
+                <div class="key-metric">
+                    <h3>Quality Improvements</h3>
+                    <p>Faster delivery of products/services</p>
+                    <p>Reduced errors through validation</p>
+                </div>
+                <div class="key-metric">
+                    <h3>Cultural Impact</h3>
+                    <p>Increased confidence in AI usage</p>
+                    <p>Enhanced cross-team collaboration</p>
+                </div>
+            </section>
+
+            <!-- Thank You -->
+            <section>
+                <h1>Thank You</h1>
+                <h3>Questions & Discussion</h3>
+                <p>Survey Analysis & Recommendations</p>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: false,
+            slideNumber: true,
+            progress: true,
+            controls: true,
+            touch: true,
+            center: false,
+            transition: 'slide',
+            navigationMode: 'linear'
+        });
+    </script>
+</body>
+</html>
